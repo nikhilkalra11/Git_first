@@ -32,12 +32,12 @@ void List<T>::createNode(T value)
 {
     Node<T>* tmp = new Node<T>;
     tmp->data = value;
-    tmp->nextNode = nullptr;
+    tmp->nextNode = NULL;
 
     if (listHead == nullptr) {
         listHead = tmp;
         listTail = tmp;
-        tmp = nullptr;
+        tmp = NULL;
     } else {
         listTail->nextNode = tmp;
         listTail = tmp;
